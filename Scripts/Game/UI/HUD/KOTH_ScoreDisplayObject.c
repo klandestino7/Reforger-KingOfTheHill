@@ -74,24 +74,24 @@ class KOTH_TeamScoreDisplayObject
 			case ScoreDiplayObjectBlinkState.OFF: {
 				m_BackgroundImage.SetVisible(false);
 				//m_BackgroundImage.SetColor(Color.FromRGBA(0, 0, 0, 255));
-				WidgetAnimator.StopAnimation(m_BackgroundImage, WidgetAnimationType.Opacity);
+				//WidgetAnimator.StopAnimation(m_BackgroundImage, WidgetAnimationType.Opacity);
 				break;
 			}
 			
 			case ScoreDiplayObjectBlinkState.TIE: {
-				WidgetAnimator.StopAllAnimations(m_BackgroundImage);
+				//WidgetAnimator.StopAllAnimations(m_BackgroundImage);
 				m_BackgroundImage.SetVisible(true);
 				m_BackgroundImage.SetColor(Color.FromRGBA(231, 76, 113, 255));
 				//WidgetAnimator.PlayAnimation(new WidgetAnimationOpacity(m_BackgroundImage, speed, 0, true, false));
-				WidgetAnimator.PlayAnimation(m_BackgroundImage, WidgetAnimationType.Opacity, 1, 0, true);
+				//WidgetAnimator.PlayAnimation(m_BackgroundImage, WidgetAnimationType.Opacity, 1, 0, true);
 				break;
 			}
 			
 			case ScoreDiplayObjectBlinkState.OWNED: {
-				WidgetAnimator.StopAllAnimations(m_BackgroundImage);
+				//AnimateWidget.StopAllAnimations(m_BackgroundImage);
 				m_BackgroundImage.SetVisible(true);
 				m_BackgroundImage.SetColor(Color.FromRGBA(46, 204, 113, 255));
-				WidgetAnimator.PlayAnimation(m_BackgroundImage, WidgetAnimationType.Opacity, 1, 0, true);
+				//WidgetAnimator.PlayAnimation(m_BackgroundImage, WidgetAnimationType.Opacity, 1, 0, true);
 			}
 		}
 	}
@@ -130,17 +130,17 @@ class KOTH_TeamScoreDisplayObject
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	void AnimateWidget_ColorFlash(Widget w, float speed = WidgetAnimator.FADE_RATE_SLOW, Color color = Color.FromSRGBA(226, 167, 80, 255))
+	void AnimateWidget_ColorFlash(Widget w, float speed = UIConstants.FADE_RATE_SLOW, Color color = Color.FromSRGBA(226, 167, 80, 255))
 	{
 		if (!w)
 			return;
 		
 		w.SetColor(color);
-		WidgetAnimator.PlayAnimation(w, WidgetAnimationType.Color, COLOR_WHITE, speed);
+		//WidgetAnimator.PlayAnimation(w, WidgetAnimationType.Color, COLOR_WHITE, speed);
 	}	
 
 	//------------------------------------------------------------------------------------------------
-	void AnimateWidget_TextPopUp(Widget w, float size, float sizeBoosted, float speed = WidgetAnimator.FADE_RATE_SLOW)
+	void AnimateWidget_TextPopUp(Widget w, float size, float sizeBoosted, float speed = UIConstants.FADE_RATE_SLOW)
 	{
 		if (!w)
 			return;
@@ -148,6 +148,6 @@ class KOTH_TeamScoreDisplayObject
 		float width = FrameSlot.GetSizeX(w);
 		
 		FrameSlot.SetSize(w, width, sizeBoosted);
-		WidgetAnimator.PlayAnimation(w, WidgetAnimationType.FrameSize, speed, width, size);
+		//WidgetAnimator.PlayAnimation(w, WidgetAnimationType.FrameSize, speed, width, size);
 	}
 };

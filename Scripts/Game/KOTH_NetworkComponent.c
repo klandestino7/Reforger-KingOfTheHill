@@ -129,7 +129,7 @@ class KOTH_NetworkComponent : ScriptComponent
 	{
 		LocalizedString msg;
 		LocalizedString msg2;
-		int duration = 2;
+		int duration = 2.0;
 		int prio = -1;
 		string msg1param1;
 		string msg2param1;
@@ -162,7 +162,7 @@ class KOTH_NetworkComponent : ScriptComponent
 			default: {return;};
 		}
 		
-		SCR_PopUpNotification.GetInstance().PopupMsg(msg, duration, 0.5, msg2, param1: msg1param1, text2param1: msg2param1, text2param2: msg2param2);
+		SCR_PopUpNotification.GetInstance().PopupMsg(msg, duration, msg2, param1: msg1param1, text2param1: msg2param1, text2param2: msg2param2);
 	}
 	
 	//------------------------------------------------------------------------------------------------

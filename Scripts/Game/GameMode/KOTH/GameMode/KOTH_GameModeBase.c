@@ -5,7 +5,7 @@ class KOTH_PlayerBackendCb: BackendCallback
 		Print("Hello");
 	}
 	
-	override void OnDataReceive( string data, int size )
+	void OnDataReceive( string data, int size )
 	{
 		Print("[BackendCallback] Data received, size=" + size);
 		Print(data);
@@ -337,9 +337,9 @@ class KOTH_GameModeBase: SCR_BaseGameMode
 	}
 	
 	//------------------------------------------------------------------------------------------------
-	override void OnPlayerDisconnected(int playerId)
+	override void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)
 	{
-		super.OnPlayerDisconnected(playerId);
+		super.OnPlayerDisconnected(playerId, cause, timeout);
 				
 		if (!Replication.IsServer()) {
 			return;

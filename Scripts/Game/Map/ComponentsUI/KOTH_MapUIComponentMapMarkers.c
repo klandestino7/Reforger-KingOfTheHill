@@ -43,9 +43,9 @@ class KOTH_MapUIComponentMapMarkers : SCR_MapUIBaseComponent
 	protected KOTH_GameModeBase m_GameMode;
 	protected KOTH_ZoneManager m_ZoneManager;
 
-	override void Update()
+	void Update()
 	{
-		super.Update();
+		//super.Update();
 
 		if (!m_Enabled) return;
 

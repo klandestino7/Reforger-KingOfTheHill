@@ -74,7 +74,7 @@ modded class SCR_WeaponInfo : SCR_InfoDisplayExtended
 	
 	SCR_WeaponInfoWidgets GetWidgets()
 	{
-		return widgets;
+		return null;
 	}
 }
 
