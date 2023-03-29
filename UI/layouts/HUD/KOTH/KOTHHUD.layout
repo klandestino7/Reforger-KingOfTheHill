@@ -2,6 +2,26 @@ FrameWidgetClass {
  Name "rootFrame"
  "Z Order" 1000
  {
+  TextWidgetClass "{5CF977DD0C6A68F6}" {
+   Name "Text0"
+   Slot FrameWidgetSlot "{5CF977DD0C6A6911}" {
+    PositionX 16
+    OffsetLeft 16
+    PositionY 520
+    OffsetTop 520
+    SizeX 288
+    OffsetRight -304
+    SizeY 48
+    OffsetBottom -568
+   }
+   Color 1 1 1 0.498
+   Text "KOTH Alpha Version"
+   "Font Size" 18
+   "Min Font Size" 12
+   FontProperties FontProperties "{5CF977DCF14A0C61}" {
+    Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+   }
+  }
   FrameWidgetClass "{59695DB3FBAC4B28}" {
    Name "Score_Frame"
    Slot FrameWidgetSlot "{5626D0F364797B4C}" {

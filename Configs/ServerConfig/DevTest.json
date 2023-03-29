@@ -1,13 +1,13 @@
 {
     "dedicatedServerId": "ar-mptest-%profilename",
-    "region": "US",
+    "region": "BR",
     "gameHostBindAddress": "",
     "gameHostBindPort": 2001,
     "gameHostRegisterBindAddress": "",
     "gameHostRegisterPort": 2001,
     "adminPassword": "mp",
     "game": {
-        "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "name": "King Of The Hill - Alpha Version",
         "scenarioId": "{5968FE6DF3F3853B}Missions/KOTH_Test.conf",
         "playerCountLimit": 64,
         "visible": true,

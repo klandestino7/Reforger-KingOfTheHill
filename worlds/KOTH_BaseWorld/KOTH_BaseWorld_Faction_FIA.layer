@@ -1,13 +1,13 @@
 GameEntity FIA_Base_01 {
  coords 6827.331 126.094 6599.969
  {
-  GenericEntity : "{160E4E4110803F26}Prefabs/Structures/Military/Flags/FlagPole_02_V1_FIA.et" {
+  GenericEntity : "{160E4E4110803F26}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_FIA.et" {
    coords -0.57 0.082 -2.277
    angleX -1.084
    angleY 178.898
    angleZ 5.193
   }
-  StaticModelEntity : "{39F7EE885940DC8F}Prefabs/Structures/Military/Fortifications/DirtCover_01_long_v1.et" {
+  StaticModelEntity : "{39F7EE885940DC8F}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v1.et" {
    coords 5.635 -1.26 -20.288
    angleX -7.167
    angleY -59.456
@@ -47,7 +47,7 @@ GameEntity FIA_Base_01 {
    coords 9.997 -0.995 -3.177
    angleY 123.78
   }
-  $grp StaticModelEntity : "{C16C62041E2AAAB2}Prefabs/Structures/Military/Fortifications/Dragontooth_01_V1.et" {
+  $grp StaticModelEntity : "{C16C62041E2AAAB2}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V1.et" {
    {
     coords 12.9 -1.497 -11.007
    }
@@ -473,7 +473,7 @@ GameEntity FIA_Base_01 {
    angleX 1.79
    angleY 0
   }
-  $grp StaticModelEntity : "{EF39F5715EF2323E}Prefabs/Structures/Walls/BarbedWire/BarbedTape_Short.et" {
+  $grp SCR_DestructibleEntity : "{EF39F5715EF2323E}Prefabs/Structures/Walls/BarbedWire/BarbedTape_01/BarbedTape_01_Short.et" {
    {
     coords 5.594 -0.947 -21.085
     angleY 24.142

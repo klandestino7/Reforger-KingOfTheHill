@@ -1,0 +1,17 @@
+ImageSetClass {
+ RefSize 520 520
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "Missions/thumb_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass thumbnail {
+   Name "thumbnail"
+   Pos 2 2
+   Size 512 512
+   Flags 0
+  }
+ }
+}

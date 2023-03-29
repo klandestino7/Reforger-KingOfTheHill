@@ -3,8 +3,8 @@ KOTH_GameModeBase KOTH_GameModeBase : "{07DBCCAB9F68873D}Prefabs/MP/Modes/KOTH_G
   KOTH_BriefingComponent "{5970EC09C52BCFAE}" {
    m_Info SCR_UIInfo "{5970EC094F2FE512}" {
     Name "King Of The Hill"
-    Description "King the Hill! Created by InclementDab"
-    Icon "{4DB6DBE133252C84}Missions/emoji.edds"
+    Description "King the Hill!"
+    Icon "{4DB6DBE133252C84}Missions/thumb_atlas.edds"
    }
    m_aWinConditions {
     SCR_BriefingVictoryCondition "{5970EC0B439B2BE0}" {
@@ -17,7 +17,7 @@ KOTH_GameModeBase KOTH_GameModeBase : "{07DBCCAB9F68873D}Prefabs/MP/Modes/KOTH_G
      description "First team to 100 tickets wins the round."
     }
    }
-   m_sBriefingImage "{4DB6DBE133252C84}Missions/emoji.edds"
+   m_sBriefingImage "{4DB6DBE133252C84}Missions/thumb_atlas.edds"
    m_bUseMissionHeaderImage 1
   }
   KOTH_ZoneManager "{59692D07CCA0E69E}" {
@@ -59,8 +59,8 @@ KOTH_GameModeBase KOTH_GameModeBase : "{07DBCCAB9F68873D}Prefabs/MP/Modes/KOTH_G
    Enabled 0
    m_Info SCR_UIInfo "{5969440545013477}" {
     Name "King Of The Hill"
-    Description "King the Hill! Created by InclementDab"
-    Icon "{4DB6DBE133252C84}Missions/emoji.edds"
+    Description "King the Hill!"
+    Icon "{4DB6DBE133252C84}Missions/thumb_atlas.edds"
    }
    m_aWinConditions {
     SCR_BriefingVictoryCondition "{596944054C0A6553}" {
@@ -118,9 +118,7 @@ KOTH_GameModeBase KOTH_GameModeBase : "{07DBCCAB9F68873D}Prefabs/MP/Modes/KOTH_G
  m_eTestGameFlags SpawnVehicles
  m_vObjectivePosition 7059.178 119.015 6016.226
  m_vObjectiveRadius 100
- m_bEnableMapUIComponent 1
  m_sCustomWeatherId "Rainy"
- m_bUseCustomTime 1
  m_fCustomTimeOfTheDay 9
  m_VehicleAssetList "{98A343D8C86F9DFB}Configs/Vehicles/VehicleAssetList.conf"
 }
